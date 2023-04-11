@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+
+    --fonte-titulo: 'Passion One', cursive;
+    --fonte-subtitulo: Arial, Helvetica, sans-serif;
+    --fonte-padrao: 'Sriracha', cursive;
+}
+
+ 
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+    header{
+
+        height: 225px;
+        background-color: black;
+    }
+
+    header > h1{
+
+        color: white;
+        font-family: var(--fonte-titulo);
+        font-size: 8vw;
+        text-align: center;
+
+        padding-top: 70px;
+        margin: auto;
+    }
+
+    header > p{
+
+        color: white;
+        font-family: var(--fonte-subtitulo);
+        text-align: center;
+    }
+
+    header > p > a{
+
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+
+    header > p > a:hover{
+
+        text-decoration-line: underline;
+        text-decoration-color: white;
+    }
+
+    /* Header finalizado*/
+
+    body > main > p{
+
+        font-family: var(--fonte-padrao);
+        font-size: 3vw;
+
+        margin-left: 30px;
+        margin-top: 80px;
+    }
+
+    body > main > div{
+
+        height: 60vw;
+        width: 100%;
+        display: inline-block;
+        position: relative;
+
+        background: black center center no-repeat fixed;
+        background-size: cover;
+        box-shadow: inset 6px 6px 13px 0px black rgba(0, 0, 0, 0.500);
+
+        margin-top: 100px;
+
+    }
+
+    body > main > div.parallax1{
+
+        background-image: url(imagens/background001.jpg);
+    }
+
+    body > main > div.parallax2{
+
+        background-image: url(imagens/background002.jpg);
+    }
+
+    body > main > div > p{
+
+        font-family: var(--fonte-padrao);
+        font-size: 3vw;
+        color: white;
+        text-shadow: 1px 1px 0px black;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.500);
+
+        position: absolute;
+
+
+        margin-top: 5vw;
+        padding: 20px;
+        padding-left: 30px;
+
+    }
+
+    body > main > p.entreparagrafos {
+
+        margin-top: 50px;
+
+    }
+
+    body > footer{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        text-align: center;
+        font-size: 15px;
+
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 5vw;
+    }
+
+    body > footer > a{
+
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    body > footer > a:hover{
+
+        text-decoration-line: underline;
+    }
